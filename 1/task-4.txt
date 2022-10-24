@@ -1,0 +1,2 @@
+touch firstone.txt
+ln firstone.txt second.txt

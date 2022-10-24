@@ -1,0 +1,29 @@
+read num
+my_arr=()
+
+for ((k=0; k<$num; k++))
+do
+  read n
+  my_arr+=($n)
+done
+
+swap=1;
+for ((i=0; i<$num-1; i++)) ;
+do
+  swap=0;
+  for ((j = 0; j < $num-1-$i; j++ ))
+  do
+    if [[ ${my_arr[j]} -gt ${my_arr[$((j+1))]} ]]
+    then 
+        temp=${my_arr[$j]};
+        my_arr[$j]=${my_arr[$j+1]};
+        my_arr[$j+1]=$temp;
+        
+        
+        swap=1;
+    fi
+  done
+done
+ 
+echo "Sorted array"
+echo ${my_arr[*]} 

@@ -1,0 +1,45 @@
+==TASK-1==
+sudo -i
+cd home
+touch key1.txt key2.txt key3.txt
+mkdir Box1 Box2
+cp key1.txt Box1
+cp key2.txt Box1
+mv key3.txt Box2
+mkdir Box3
+cp -r Box1 Box3
+cd Box3
+cd Box1
+ls -l
+chmod 554 key1.txt key2.txt
+cd ..
+pwd
+cd ..
+mv Box3 /root
+rm key1.txt key2.txt
+rm -r Box1 Box2
+
+
+==TASK-2==
+cat> hello.txt
+grep -c Hello hello.txt
+
+
+==TASK-3==
+difference-
+1. Soft kink is an actual link to original file and hard link is mirror copy of that original file.
+2. If the original file get deleted soft link has no value because it points to a non-existent file. On the other hand, hard link is entirely opposite,
+it will sitll have all the data of original file even after the original file get deleted because it act as a mirror copy of the original file.
+
+
+==TASK-4==
+touch firstone.txt
+ln firstone.txt second.txt
+
+
+==TASK-5==
+ls -a
+
+
+==TASK-6==
+head -n 15 a.txt | tail -n 7

@@ -1,0 +1,2 @@
+cat> hello.txt
+grep -c Hello hello.txt

@@ -1,0 +1,19 @@
+
+happynum() {
+ r=0;
+ sum=0;
+ while [ $num -gt 0 ];
+ do
+  r=$(($num%$10))
+  sum=$(($sum+($r*2))
+  num=$(($num/$10))
+ done
+ return $sum
+}
+
+happyPrime() {
+ p=0
+ result=0
+ arr=()
+ while [ 1] 
+}

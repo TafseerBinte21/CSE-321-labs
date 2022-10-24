@@ -1,0 +1,19 @@
+sudo -i
+cd home
+touch key1.txt key2.txt key3.txt
+mkdir Box1 Box2
+cp key1.txt Box1
+cp key2.txt Box1
+mv key3.txt Box2
+mkdir Box3
+cp -r Box1 Box3
+cd Box3
+cd Box1
+ls -l
+chmod 554 key1.txt key2.txt
+cd ..
+pwd
+cd ..
+mv Box3 /root
+rm key1.txt key2.txt
+rm -r Box1 Box2

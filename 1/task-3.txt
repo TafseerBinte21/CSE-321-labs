@@ -1,0 +1,4 @@
+difference-
+
+1. Soft kink is an actual link to original file and hard link is mirror copy of that original file.
+2. If the original file get deleted soft link has no value because it points to a non-existent file. On the other hand, hard link is entirely opposite, it will sitll have all the data of original file even after the original file get deleted because it act as a mirror copy of the original file.

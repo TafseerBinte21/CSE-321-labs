@@ -1,0 +1,18 @@
+echo "enter num1"
+read num1
+
+echo "enter num2"
+read num2
+
+echo "enter num3"
+read num3
+
+if [ $num1 -gt $num2 ] ;
+  then echo $(($num1-$num2))
+fi
+if [ $num3 -lt $num2 ] ;
+  then echo $(($num3+num2))
+fi
+if [ $num2 -eq $num3 ] ;
+  then echo $(($num2*$num3))
+fi
